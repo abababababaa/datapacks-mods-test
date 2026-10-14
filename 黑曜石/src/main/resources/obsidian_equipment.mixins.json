@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "dev.datapacksmods.obsidian.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["LivingEntityMixin", "MerchantEntityMixin", "VillagerEntityMixin", "TradeOfferAccessor", "AnvilScreenHandlerMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

@@ -1,0 +1,13 @@
+{
+  "item.obsidian_equipment.obsidian_sword": "黑曜石剑",
+  "item.obsidian_equipment.obsidian_pickaxe": "黑曜石镐",
+  "item.obsidian_equipment.obsidian_axe": "黑曜石斧",
+  "item.obsidian_equipment.obsidian_shovel": "黑曜石锹",
+  "item.obsidian_equipment.obsidian_hoe": "黑曜石锄",
+  "item.obsidian_equipment.obsidian_helmet": "黑曜石头盔",
+  "item.obsidian_equipment.obsidian_chestplate": "黑曜石胸甲",
+  "item.obsidian_equipment.obsidian_leggings": "黑曜石护腿",
+  "item.obsidian_equipment.obsidian_boots": "黑曜石靴子",
+  "effect.obsidian_equipment.obsidian_fire_resistance": "抗火（黑曜石套装）",
+  "advancement.obsidian_equipment.full_set.description": "穿戴全套黑曜石护甲"
+}

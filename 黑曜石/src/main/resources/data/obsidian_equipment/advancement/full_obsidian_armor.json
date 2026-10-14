@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:story/obtain_armor",
+  "display": {
+    "icon": {
+      "id": "obsidian_equipment:obsidian_chestplate"
+    },
+    "title": {
+      "text": "？？？"
+    },
+    "description": {
+      "translate": "advancement.obsidian_equipment.full_set.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "wear_full_set": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "wear_full_set"
+    ]
+  ]
+}

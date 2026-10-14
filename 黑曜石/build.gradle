@@ -1,0 +1,51 @@
+plugins { id 'fabric-loom' version '1.7.4' }
+version = '1.0.0'
+group = 'dev.datapacksmods'
+base { archivesName = 'obsidian-equipment' }
+repositories { mavenCentral() }
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.1'
+    mappings 'net.fabricmc:yarn:1.21.1+build.3:v2'
+    modImplementation 'net.fabricmc:fabric-loader:0.16.14'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.116.6+1.21.1'
+    if (project.hasProperty('withPortableCrafting')) {
+        modLocalRuntime files('../3x3/portable-crafting-3x3-1.0.0.jar')
+    }
+}
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand version: project.version }
+}
+tasks.withType(JavaCompile).configureEach { options.release = 21 }
+java { toolchain.languageVersion = JavaLanguageVersion.of(21); withSourcesJar() }
+jar {
+    from('LICENSE') { rename { "${it}_obsidian_equipment" } }
+    from('NOTICE.md')
+}
+sourceSets {
+    gametest {
+        compileClasspath += sourceSets.main.compileClasspath + sourceSets.main.output
+        runtimeClasspath += sourceSets.main.runtimeClasspath + sourceSets.main.output
+    }
+}
+loom {
+    mods {
+        obsidian_equipment { sourceSet sourceSets.main }
+        obsidian_equipment_test { sourceSet sourceSets.gametest }
+    }
+    runs {
+        gametest {
+            server()
+            source sourceSets.gametest
+            vmArg '-Dfabric-api.gametest'
+            vmArg '-Dfabric-api.gametest.report-file=../../build/gametest-results.xml'
+            runDir 'run/gametest'
+        }
+        smokeClient {
+            client()
+            source sourceSets.gametest
+            vmArg '-Dobsidian-equipment.client-smoke=true'
+            runDir 'run/smoke-client'
+        }
+    }
+}

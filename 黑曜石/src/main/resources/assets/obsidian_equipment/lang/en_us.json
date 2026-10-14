@@ -1,0 +1,13 @@
+{
+  "item.obsidian_equipment.obsidian_sword": "Obsidian Sword",
+  "item.obsidian_equipment.obsidian_pickaxe": "Obsidian Pickaxe",
+  "item.obsidian_equipment.obsidian_axe": "Obsidian Axe",
+  "item.obsidian_equipment.obsidian_shovel": "Obsidian Shovel",
+  "item.obsidian_equipment.obsidian_hoe": "Obsidian Hoe",
+  "item.obsidian_equipment.obsidian_helmet": "Obsidian Helmet",
+  "item.obsidian_equipment.obsidian_chestplate": "Obsidian Chestplate",
+  "item.obsidian_equipment.obsidian_leggings": "Obsidian Leggings",
+  "item.obsidian_equipment.obsidian_boots": "Obsidian Boots",
+  "effect.obsidian_equipment.obsidian_fire_resistance": "Fire Resistance (Obsidian Set)",
+  "advancement.obsidian_equipment.full_set.description": "Equip a full set of obsidian armor"
+}
