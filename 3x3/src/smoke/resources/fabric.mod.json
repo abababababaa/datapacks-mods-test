@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "portable_crafting_smoke",
+  "version": "1.0.0",
+  "environment": "*",
+  "entrypoints": {
+    "preLaunch": ["dev.datapacksmods.portablecrafting.smoke.MixinSmokeTest"]
+  }
+}

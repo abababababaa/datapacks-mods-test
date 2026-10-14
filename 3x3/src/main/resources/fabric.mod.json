@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "portable_crafting_3x3",
+  "version": "${version}",
+  "name": "Portable Crafting 3x3",
+  "description": "A full crafting grid in the survival inventory, with a wider, non-overlapping layout.",
+  "authors": ["datapacks-mods-test"],
+  "license": "MIT",
+  "environment": "*",
+  "mixins": ["portable_crafting_3x3.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "1.21.1",
+    "java": ">=21"
+  }
+}

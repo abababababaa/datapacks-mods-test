@@ -1,0 +1,60 @@
+plugins {
+    id 'fabric-loom' version '1.7.4'
+}
+
+version = '1.0.0'
+group = 'dev.datapacksmods'
+base { archivesName = 'portable-crafting-3x3' }
+
+repositories { mavenCentral() }
+
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.1'
+    mappings 'net.fabricmc:yarn:1.21.1+build.3:v2'
+    modImplementation 'net.fabricmc:fabric-loader:0.16.14'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand version: project.version }
+}
+
+tasks.withType(JavaCompile).configureEach { options.release = 21 }
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+    withSourcesJar()
+}
+test { useJUnitPlatform() }
+
+jar { from('LICENSE') { rename { "${it}_portable_crafting_3x3" } } }
+
+sourceSets {
+    smoke {
+        compileClasspath += sourceSets.main.compileClasspath + sourceSets.main.output
+        runtimeClasspath += sourceSets.main.runtimeClasspath + sourceSets.main.output
+    }
+}
+
+loom {
+    mods {
+        portable_crafting_3x3 { sourceSet sourceSets.main }
+        portable_crafting_smoke { sourceSet sourceSets.smoke }
+    }
+    runs {
+        smokeClient {
+            client()
+            source sourceSets.smoke
+            name 'Client mixin smoke test'
+            vmArg '-Dportablecrafting.smoke=true'
+            runDir 'run/smoke-client'
+        }
+        smokeServer {
+            server()
+            source sourceSets.smoke
+            name 'Dedicated server mixin smoke test'
+            vmArg '-Dportablecrafting.smoke=true'
+            runDir 'run/smoke-server'
+        }
+    }
+}
