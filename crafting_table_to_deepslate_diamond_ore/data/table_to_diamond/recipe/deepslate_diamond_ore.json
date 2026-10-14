@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:crafting_table"
+    }
+  ],
+  "result": {
+    "id": "minecraft:deepslate_diamond_ore",
+    "count": 1
+  }
+}
