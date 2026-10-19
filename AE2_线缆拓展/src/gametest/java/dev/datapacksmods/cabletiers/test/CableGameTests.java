@@ -142,8 +142,12 @@ public final class CableGameTests {
         for (CableKind kind : CableKind.values()) for (AEColor color : AEColor.values()) {
             checkCraft(h, List.of(new ItemStack(kind.vanilla(color))), CableItems.item(kind, color, 1), 4);
             checkCraft(h, java.util.Collections.nCopies(4, new ItemStack(CableItems.item(kind, color, 1))), kind.vanilla(color), 1);
-            checkCraft(h, java.util.Collections.nCopies(4, new ItemStack(kind.vanilla(color))), CableItems.item(kind, color, 3), 1);
+            checkCraft(h, java.util.Collections.nCopies(8, new ItemStack(kind.vanilla(color))), CableItems.item(kind, color, 3), 2);
         }
+        checkCraft(h, java.util.Collections.nCopies(4, new ItemStack(CableKind.COVERED.vanilla(AEColor.TRANSPARENT))),
+            CableKind.DENSE_COVERED.vanilla(AEColor.TRANSPARENT), 1);
+        checkCraft(h, java.util.Collections.nCopies(4, new ItemStack(CableKind.SMART.vanilla(AEColor.TRANSPARENT))),
+            CableKind.DENSE_SMART.vanilla(AEColor.TRANSPARENT), 1);
         h.succeed();
     }
     private static void checkCraft(GameTestHelper h, List<ItemStack> ingredients, net.minecraft.world.item.Item expected, int count) {
@@ -153,6 +157,6 @@ public final class CableGameTests {
         var match = h.getLevel().getRecipeManager().getRecipeFor(RecipeType.CRAFTING, input, h.getLevel());
         h.assertTrue(match.isPresent(), "Recipe exists");
         var output = match.orElseThrow().value().assemble(input, h.getLevel().registryAccess());
-        h.assertTrue(output.is(expected) && output.getCount() == count, "Correct recipe output and count");
+        h.assertTrue(output.is(expected) && output.getCount() == count, "Expected " + count + " x " + expected + "; got " + output + " via " + match.orElseThrow().id());
     }
 }

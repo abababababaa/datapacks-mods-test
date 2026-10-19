@@ -9,7 +9,26 @@ RES = ROOT / "src/main/resources"
 COLORS = ["fluix", "white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black"]
 KINDS = ["glass_cable", "covered_cable", "smart_cable", "covered_dense_cable", "smart_dense_cable"]
 
+def shapeless_key(recipe):
+    if recipe.get("type") != "minecraft:crafting_shapeless":
+        return None
+    return tuple(sorted(json.dumps(value, sort_keys=True) for value in recipe["ingredients"]))
+
 with zipfile.ZipFile(sys.argv[1]) as ae2:
+    official_inputs = {}
+    for name in ae2.namelist():
+        if name.startswith("data/ae2/recipe/") and name.endswith(".json"):
+            recipe = json.loads(ae2.read(name))
+            key = shapeless_key(recipe)
+            if key is not None:
+                official_inputs[key] = name
+    own_inputs = {}
+    for path in (RES / "data/ae2_cable_tiers/recipe").rglob("*.json"):
+        key = shapeless_key(json.loads(path.read_text()))
+        assert key not in official_inputs, f"Conflicts with AE2: {path} / {official_inputs.get(key)}"
+        assert key not in own_inputs, f"Ambiguous addon recipes: {path} / {own_inputs.get(key)}"
+        own_inputs[key] = path
+
     for kind in KINDS:
         for color in COLORS:
             base = f"{color}_{kind}"
@@ -23,7 +42,7 @@ with zipfile.ZipFile(sys.argv[1]) as ae2:
             normal = f"ae2:{base}"
             high = f"ae2_cable_tiers:{base}_tier_3"
             for category, ingredient, count, output, quantity in [
-                ("split", normal, 1, low, 4), ("combine", low, 4, normal, 1), ("upgrade", normal, 4, high, 1)
+                ("split", normal, 1, low, 4), ("combine", low, 4, normal, 1), ("upgrade", normal, 8, high, 2)
             ]:
                 r = json.loads((recipes / category / f"{base}.json").read_text())
                 assert r["ingredients"] == [{"item": ingredient}] * count
@@ -36,6 +55,6 @@ with zipfile.ZipFile(sys.argv[1]) as ae2:
     for p in RES.rglob("*.json"):
         json.loads(p.read_text())
     assert len(list((RES / "assets/ae2_cable_tiers/models/item").glob("*.json"))) == 170
-    assert len(list((RES / "data/ae2_cable_tiers/recipe").rglob("*.json"))) == 426
+    assert len(list((RES / "data/ae2_cable_tiers/recipe").rglob("*.json"))) == 425
     assert not (RES / "data/ae2/recipe").exists(), "Do not overwrite AE2 recipes"
-print("Passed: 255 combinations; 170 model references; 426 recipes; exact tier conversion costs; valid JSON; no overwritten AE2 recipes.")
+print("Passed: 255 combinations; 170 model references; 425 recipes; exact tier conversion costs; valid JSON; no overwritten AE2 recipes.")

@@ -13,10 +13,22 @@
     },
     {
       "item": "ae2:black_smart_dense_cable"
+    },
+    {
+      "item": "ae2:black_smart_dense_cable"
+    },
+    {
+      "item": "ae2:black_smart_dense_cable"
+    },
+    {
+      "item": "ae2:black_smart_dense_cable"
+    },
+    {
+      "item": "ae2:black_smart_dense_cable"
     }
   ],
   "result": {
     "id": "ae2_cable_tiers:black_smart_dense_cable_tier_3",
-    "count": 1
+    "count": 2
   }
 }

@@ -13,10 +13,22 @@
     },
     {
       "item": "ae2:yellow_smart_cable"
+    },
+    {
+      "item": "ae2:yellow_smart_cable"
+    },
+    {
+      "item": "ae2:yellow_smart_cable"
+    },
+    {
+      "item": "ae2:yellow_smart_cable"
+    },
+    {
+      "item": "ae2:yellow_smart_cable"
     }
   ],
   "result": {
     "id": "ae2_cable_tiers:yellow_smart_cable_tier_3",
-    "count": 1
+    "count": 2
   }
 }

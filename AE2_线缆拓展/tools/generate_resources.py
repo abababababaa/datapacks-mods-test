@@ -37,7 +37,7 @@ for kind_index, kind in enumerate(KINDS):
         high = item(kind, color, 3)
         recipe(f"split/{color}_{kind}", [{"item": normal}], low, 4)
         recipe(f"combine/{color}_{kind}", [{"item": low}] * 4, normal)
-        recipe(f"upgrade/{color}_{kind}", [{"item": normal}] * 4, high)
+        recipe(f"upgrade/{color}_{kind}", [{"item": normal}] * 8, high, 2)
         for tier in [1, 3]:
             name = f"{color}_{kind}_tier_{tier}"
             write(f"assets/{MOD}/models/item/{name}.json", {"parent": f"ae2:item/{color}_{kind}"})
@@ -52,9 +52,7 @@ for kind_index, kind in enumerate(KINDS):
         # Keep AE2's own color-removal ingredient policy (water bucket, etc.) and vanilla remainders.
         recipe(f"clean/{kind}_tier_{tier}", [{"tag": f"{MOD}:colored_{kind}_tier_{tier}"}, {"tag": "ae2:can_remove_color"}], item(kind, "fluix", tier))
 
-# Direct starter recipe: the same ingredients as AE2's four-cable recipe produce sixteen tier-I cables.
-recipe("starter_glass_tier_1", [{"item": "ae2:quartz_fiber"}, {"tag": "ae2:all_fluix"}, {"tag": "ae2:all_fluix"}], item("glass_cable", "fluix", 1), 16)
 write(f"assets/{MOD}/lang/zh_cn.json", zh)
 write(f"assets/{MOD}/lang/en_us.json", en)
 write("pack.mcmeta", {"pack": {"pack_format": 48, "description": "AE2 Cable Tiers resources"}})
-print("Generated 170 model references, 426 recipes, tier/color tags, and translations.")
+print("Generated 170 model references, 425 recipes, tier/color tags, and translations.")
