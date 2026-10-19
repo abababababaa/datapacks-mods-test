@@ -2,7 +2,16 @@
 
 目标：Minecraft Java 1.21.1、NeoForge 21.1.169 或更高的 21.1.x、官方 AE2 **19.2.18**。这是 NeoForge 附属模组，不用于 Fabric。AE2 本身还需要 GuideME 21.1.1 或兼容的较新版本。
 
-当前状态：初版源代码及资源已准备，静态资源检查通过；云环境尚未放行 `maven.neoforged.net`，构建在下载 NeoForm Runtime 时收到 HTTP 403。尚无经过编译和游戏验证的可安装 JAR，游戏测试尚未执行。待依赖网络恢复后继续构建、诊断和交付。
+已构建可安装的 [ae2-cable-tiers-1.0.0.jar](ae2-cable-tiers-1.0.0.jar)，并通过 GitHub Actions 的 12 项真实 AE2 游戏测试。构建来源、运行链接与 SHA-256 见 [验证结果](verification/result.json)，详细输出见 [构建和游戏测试日志](verification/build.log)。
+
+## 安装
+
+1. 使用 Minecraft 1.21.1 的 **NeoForge** 实例，NeoForge 至少为 21.1.169。之前的 Fabric 模组需要另一个 Fabric 实例运行。
+2. 在该实例的 `mods` 中安装官方 AE2 **19.2.18** 及其依赖 **GuideME 21.1.1**（或兼容的较新版本）。
+3. 下载本目录的 `ae2-cable-tiers-1.0.0.jar`，放进同一个 `mods` 文件夹，然后重启游戏。JAR 无需解压；多人游戏的服务器和客户端均需安装。
+4. 在创造模式的“AE2 线缆拓展”标签页中查看全部三级线缆，或通过下面的合成配方获取。
+
+[直接下载 JAR](https://github.com/abababababaa/datapacks-mods-test/raw/refs/heads/main/AE2_%E7%BA%BF%E7%BC%86%E6%8B%93%E5%B1%95/ae2-cable-tiers-1.0.0.jar)。如浏览器询问保存位置，选择保存文件。
 
 ## 全覆盖范围
 
@@ -68,7 +77,7 @@ denseTier3 = 64
 .\gradlew.bat runGameTestServer
 ```
 
-Linux/macOS 使用 `./gradlew`。预期构建输出为 `build/libs/ae2-cable-tiers-1.0.0.jar`。构建成功后方可将其放进 NeoForge 实例的 `mods`，客户端和服务器都需要安装。不要把开发源码文件夹直接放入 `mods`。
+Linux/macOS 使用 `./gradlew`。构建输出为 `build/libs/ae2-cable-tiers-1.0.0.jar`。将构建结果放进 NeoForge 实例的 `mods`，客户端和服务器都需要安装。不要把开发源码文件夹直接放入 `mods`。
 
 可重复生成资源并检查：
 
@@ -79,6 +88,15 @@ python tools/validate_resources.py /path/to/appliedenergistics2-19.2.18.jar
 
 第二条静态检查已实际通过：验证 255 个组合、170 个模型的 AE2 父资源引用、425 个配方、各色各类型的精确换算成本，以及不覆盖原版配方。
 
-`src/gametest` 已准备真实 AE2 游戏测试：所有组合的节点容量及稀有度、六种实际频道上限、混合路径瓶颈、重染色和颜色隔离、倍率/无限模式、全部换算配方。因 NeoForge 依赖网络阻塞，目前没有执行这些测试，不能据此声称真实频道已验证。
+`src/gametest` 的 12 项真实 AE2 游戏测试已执行并全部通过：
+
+- 255 个组合的实际节点容量、原部件类型和白/蓝/紫稀有度。
+- 基本线缆的 4/8/16 与致密线缆的 16/32/64 实际频道分配；额外设备不能上线。
+- 两种混合等级路径的低容量瓶颈。
+- 染色隔离、重染色后的等级保留及重新连接。
+- AE2 的频道倍率和无限模式。
+- 全部 255 个等级换算配方的真实合成输出，以及 AE2 原有的包层/智能致密线缆配方。
+
+此外，静态检查确认所有新增无序配方不存在相同输入的 AE2 配方冲突。测试在 NeoForge 21.1.169 + AE2 19.2.18 的专用 GameTest 服务端执行；未在 Windows 图形界面或任意其他模组组合中逐一测试。
 
 开发缓存、测试世界和构建中间文件由 `.gitignore` 排除。测试代码不进入主模组 JAR。
