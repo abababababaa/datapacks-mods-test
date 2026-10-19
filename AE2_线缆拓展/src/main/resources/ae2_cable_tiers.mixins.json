@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "dev.datapacksmods.cabletiers.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["GridNodeMixin", "GridConnectionMixin", "CableRecolorMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2:white_covered_cable"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:white_covered_cable_tier_1",
+    "count": 4
+  }
+}

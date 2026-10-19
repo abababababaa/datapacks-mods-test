@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "ae2_cable_tiers:glass_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:glass_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:glass_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:glass_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:glass_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:glass_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:glass_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:glass_cable_tier_1"
+    },
+    {
+      "tag": "c:dyes/yellow"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:yellow_glass_cable_tier_1",
+    "count": 8
+  }
+}

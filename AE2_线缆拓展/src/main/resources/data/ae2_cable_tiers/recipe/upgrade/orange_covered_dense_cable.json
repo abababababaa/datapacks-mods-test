@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2:orange_covered_dense_cable"
+    },
+    {
+      "item": "ae2:orange_covered_dense_cable"
+    },
+    {
+      "item": "ae2:orange_covered_dense_cable"
+    },
+    {
+      "item": "ae2:orange_covered_dense_cable"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:orange_covered_dense_cable_tier_3",
+    "count": 1
+  }
+}

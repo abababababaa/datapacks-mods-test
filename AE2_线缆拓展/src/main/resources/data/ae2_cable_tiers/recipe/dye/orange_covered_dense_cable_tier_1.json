@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "ae2_cable_tiers:covered_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:covered_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:covered_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:covered_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:covered_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:covered_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:covered_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:covered_dense_cable_tier_1"
+    },
+    {
+      "tag": "c:dyes/orange"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:orange_covered_dense_cable_tier_1",
+    "count": 8
+  }
+}

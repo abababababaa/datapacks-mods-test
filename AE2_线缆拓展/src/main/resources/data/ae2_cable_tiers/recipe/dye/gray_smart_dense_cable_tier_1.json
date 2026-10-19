@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "ae2_cable_tiers:smart_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:smart_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:smart_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:smart_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:smart_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:smart_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:smart_dense_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:smart_dense_cable_tier_1"
+    },
+    {
+      "tag": "c:dyes/gray"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:gray_smart_dense_cable_tier_1",
+    "count": 8
+  }
+}

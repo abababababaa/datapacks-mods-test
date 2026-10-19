@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ae2_cable_tiers"
+version="${version}"
+displayName="AE2 Cable Tiers"
+authors="datapacks-mods-test"
+description='''Three tiers for every AE2 network cable and color: 4/8/16 and 16/32/64 channels.'''
+[[mixins]]
+config="ae2_cable_tiers.mixins.json"
+[[dependencies.ae2_cable_tiers]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.169,22)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ae2_cable_tiers]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ae2_cable_tiers]]
+modId="ae2"
+type="required"
+versionRange="[19.2.18]"
+ordering="AFTER"
+side="BOTH"

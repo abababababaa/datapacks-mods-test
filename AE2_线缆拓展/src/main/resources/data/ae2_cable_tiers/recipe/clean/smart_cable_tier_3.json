@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "ae2_cable_tiers:colored_smart_cable_tier_3"
+    },
+    {
+      "tag": "ae2:can_remove_color"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:fluix_smart_cable_tier_3",
+    "count": 1
+  }
+}

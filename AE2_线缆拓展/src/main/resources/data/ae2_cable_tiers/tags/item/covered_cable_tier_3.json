@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "ae2_cable_tiers:fluix_covered_cable_tier_3",
+    "ae2_cable_tiers:white_covered_cable_tier_3",
+    "ae2_cable_tiers:orange_covered_cable_tier_3",
+    "ae2_cable_tiers:magenta_covered_cable_tier_3",
+    "ae2_cable_tiers:light_blue_covered_cable_tier_3",
+    "ae2_cable_tiers:yellow_covered_cable_tier_3",
+    "ae2_cable_tiers:lime_covered_cable_tier_3",
+    "ae2_cable_tiers:pink_covered_cable_tier_3",
+    "ae2_cable_tiers:gray_covered_cable_tier_3",
+    "ae2_cable_tiers:light_gray_covered_cable_tier_3",
+    "ae2_cable_tiers:cyan_covered_cable_tier_3",
+    "ae2_cable_tiers:purple_covered_cable_tier_3",
+    "ae2_cable_tiers:blue_covered_cable_tier_3",
+    "ae2_cable_tiers:brown_covered_cable_tier_3",
+    "ae2_cable_tiers:green_covered_cable_tier_3",
+    "ae2_cable_tiers:red_covered_cable_tier_3",
+    "ae2_cable_tiers:black_covered_cable_tier_3"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "ae2_cable_tiers:white_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:orange_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:magenta_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:light_blue_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:yellow_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:lime_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:pink_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:gray_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:light_gray_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:cyan_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:purple_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:blue_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:brown_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:green_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:red_smart_dense_cable_tier_1",
+    "ae2_cable_tiers:black_smart_dense_cable_tier_1"
+  ]
+}

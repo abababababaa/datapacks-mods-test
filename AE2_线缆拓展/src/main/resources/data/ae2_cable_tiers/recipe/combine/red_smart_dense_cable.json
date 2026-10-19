@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2_cable_tiers:red_smart_dense_cable_tier_1"
+    },
+    {
+      "item": "ae2_cable_tiers:red_smart_dense_cable_tier_1"
+    },
+    {
+      "item": "ae2_cable_tiers:red_smart_dense_cable_tier_1"
+    },
+    {
+      "item": "ae2_cable_tiers:red_smart_dense_cable_tier_1"
+    }
+  ],
+  "result": {
+    "id": "ae2:red_smart_dense_cable",
+    "count": 1
+  }
+}

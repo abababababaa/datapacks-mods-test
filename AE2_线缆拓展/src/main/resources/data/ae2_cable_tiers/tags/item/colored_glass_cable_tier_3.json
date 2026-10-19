@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "ae2_cable_tiers:white_glass_cable_tier_3",
+    "ae2_cable_tiers:orange_glass_cable_tier_3",
+    "ae2_cable_tiers:magenta_glass_cable_tier_3",
+    "ae2_cable_tiers:light_blue_glass_cable_tier_3",
+    "ae2_cable_tiers:yellow_glass_cable_tier_3",
+    "ae2_cable_tiers:lime_glass_cable_tier_3",
+    "ae2_cable_tiers:pink_glass_cable_tier_3",
+    "ae2_cable_tiers:gray_glass_cable_tier_3",
+    "ae2_cable_tiers:light_gray_glass_cable_tier_3",
+    "ae2_cable_tiers:cyan_glass_cable_tier_3",
+    "ae2_cable_tiers:purple_glass_cable_tier_3",
+    "ae2_cable_tiers:blue_glass_cable_tier_3",
+    "ae2_cable_tiers:brown_glass_cable_tier_3",
+    "ae2_cable_tiers:green_glass_cable_tier_3",
+    "ae2_cable_tiers:red_glass_cable_tier_3",
+    "ae2_cable_tiers:black_glass_cable_tier_3"
+  ]
+}
