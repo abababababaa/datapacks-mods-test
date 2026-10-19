@@ -18,61 +18,61 @@ Loaded 111 artifacts from /home/runner/work/datapacks-mods-test/datapacks-mods-t
 [1m*** Started working on [4mdownloadJson[0m[0m
   ↓ https://launchermeta.mojang.com/mc/game/version_manifest_v2.json
   ↓ https://piston-meta.mojang.com/v1/packages/499680d659b7a0ccb2fa9a809c345c5baf2ace7d/1.21.1.json
- [1m[92m✓[0m Completed [4mdownloadJson[0m in 0.52s
+ [1m[92m✓[0m Completed [4mdownloadJson[0m in 0.34s
 [1m*** Started working on [4mdownloadClientMappings[0m[0m
-[1m*** Started working on [4mdownloadClient[0m[0m
-[1m*** Started working on [4mlistLibraries[0m[0m
 [1m*** Started working on [4mdownloadServer[0m[0m
-  ↓ https://piston-data.mojang.com/v1/objects/2244b6f072256667bcd9a73df124d6c58de77992/client.txt
+[1m*** Started working on [4mlistLibraries[0m[0m
+[1m*** Started working on [4mdownloadClient[0m[0m
   ↓ https://piston-data.mojang.com/v1/objects/30c73b1c5da787909b2f73340419fdf13b9def88/client.jar
   ↓ https://piston-data.mojang.com/v1/objects/59353fb40c36d304f2035d51e7d6e6baa98dc05c/server.jar
- [1m[92m✓[0m Completed [4mlistLibraries[0m in 0.04s
- [1m[92m✓[0m Completed [4mdownloadClientMappings[0m in 0.46s
+  ↓ https://piston-data.mojang.com/v1/objects/2244b6f072256667bcd9a73df124d6c58de77992/client.txt
+ [1m[92m✓[0m Completed [4mlistLibraries[0m in 0.02s
+ [1m[92m✓[0m Completed [4mdownloadClientMappings[0m in 0.36s
 [1m*** Started working on [4mmergeMappings[0m[0m
  ↳ Running external tool net.neoforged.installertools:installertools:2.1.2:fatjar
- [1m[92m✓[0m Completed [4mdownloadClient[0m in 0.77s
+ [1m[92m✓[0m Completed [4mdownloadClient[0m in 0.58s
 [1m*** Started working on [4mstripClient[0m[0m
- [1m[92m✓[0m Completed [4mdownloadServer[0m in 1.23s
+ [1m[92m✓[0m Completed [4mdownloadServer[0m in 1.20s
 [1m*** Started working on [4mextractServer[0m[0m
  ↳ Running external tool net.neoforged.installertools:installertools:2.1.2:fatjar
- [1m[92m✓[0m Completed [4mextractServer[0m in 0.80s
+ [1m[92m✓[0m Completed [4mextractServer[0m in 0.67s
 [1m*** Started working on [4mstripServer[0m[0m
- [1m[92m✓[0m Completed [4mmergeMappings[0m in 4.13s
- [1m[92m✓[0m Completed [4mstripClient[0m in 4.05s
- [1m[92m✓[0m Completed [4mstripServer[0m in 2.70s
+ [1m[92m✓[0m Completed [4mmergeMappings[0m in 3.22s
+ [1m[92m✓[0m Completed [4mstripServer[0m in 1.78s
+ [1m[92m✓[0m Completed [4mstripClient[0m in 3.20s
 [1m*** Started working on [4mmerge[0m[0m
  ↳ Running external tool net.neoforged:mergetool:2.0.3:fatjar
- [1m[92m✓[0m Completed [4mmerge[0m in 3.74s
+ [1m[92m✓[0m Completed [4mmerge[0m in 2.91s
 [1m*** Started working on [4mrename[0m[0m
  ↳ Running external tool net.neoforged:AutoRenamingTool:2.0.3:all
- [1m[92m✓[0m Completed [4mrename[0m in 5.86s
+ [1m[92m✓[0m Completed [4mrename[0m in 4.20s
 [1m*** Started working on [4mdecompile[0m[0m
  ↳ Running external tool org.vineflower:vineflower:1.10.1
- [1m[92m✓[0m Completed [4mdecompile[0m in 65.00s
+ [1m[92m✓[0m Completed [4mdecompile[0m in 47.37s
 [1m*** Started working on [4minject[0m[0m
- [1m[92m✓[0m Completed [4minject[0m in 3.06s
+ [1m[92m✓[0m Completed [4minject[0m in 2.11s
 [1m*** Started working on [4mpatch[0m[0m
  ↳ Running external tool io.codechicken:DiffPatch:2.0.0.36:all
- [1m[92m✓[0m Completed [4mpatch[0m in 2.75s
+ [1m[92m✓[0m Completed [4mpatch[0m in 2.24s
 [1m*** Started working on [4mapplyNeoforgePatches[0m[0m
  ↳ Running external tool io.codechicken:DiffPatch:2.0.0.36:all
- [1m[92m✓[0m Completed [4mapplyNeoforgePatches[0m in 2.14s
+ [1m[92m✓[0m Completed [4mapplyNeoforgePatches[0m in 1.64s
 [1m*** Started working on [4mtransformSources[0m[0m
  ↳ Running external tool net.neoforged.jst:jst-cli-bundle:1.0.66
- [1m[92m✓[0m Completed [4mtransformSources[0m in 8.68s
+ [1m[92m✓[0m Completed [4mtransformSources[0m in 6.49s
 [1m*** Started working on [4mrecompile[0m[0m
  109 items on the compile classpath
  0 items on the sourcepath
 [1m*** Started working on [4msourcesWithNeoForge[0m[0m
  Compiling 5364 source files
- [1m[92m✓[0m Completed [4msourcesWithNeoForge[0m in 5.06s
+ [1m[92m✓[0m Completed [4msourcesWithNeoForge[0m in 4.14s
 Copied 0 resource files
- [1m[92m✓[0m Completed [4mrecompile[0m in 39.31s
+ [1m[92m✓[0m Completed [4mrecompile[0m in 28.29s
 [1m*** Started working on [4mcompiledWithNeoForge[0m[0m
- [1m[92m✓[0m Completed [4mcompiledWithNeoForge[0m in 7.24s
+ [1m[92m✓[0m Completed [4mcompiledWithNeoForge[0m in 5.11s
 [1m*** Started working on [4msourcesAndCompiledWithNeoForge[0m[0m
- [1m[92m✓[0m Completed [4msourcesAndCompiledWithNeoForge[0m in 2.69s
-Total runtime: 146.81s
+ [1m[92m✓[0m Completed [4msourcesAndCompiledWithNeoForge[0m in 2.05s
+Total runtime: 107.24s
 
 
 > Task :compileJava
@@ -142,13 +142,13 @@ Downloaded 3888 files with a total size of 787 MiB
 
 > Task :runGameTestServer
 WARN StatusConsoleListener Advanced terminal features are not available in this environment
-[07:20:30] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserverdev, --gameDir, ., --fml.fmlVersion, 4.0.39, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.169, --fml.neoFormVersion, 20240808.144430]
-[07:20:30] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
-[07:20:30] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Linux arch amd64 version 6.17.0-1022-azure
-[07:20:31] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserverdev
-[07:20:31] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/home/runner/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%2394!/ Service=ModLauncher Env=SERVER
-[07:20:31] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[07:20:31] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+[07:25:02] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserverdev, --gameDir, ., --fml.fmlVersion, 4.0.39, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.169, --fml.neoFormVersion, 20240808.144430]
+[07:25:02] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[07:25:02] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Linux arch amd64 version 6.17.0-1022-azure
+[07:25:02] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserverdev
+[07:25:02] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/home/runner/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%2394!/ Service=ModLauncher Env=SERVER
+[07:25:02] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[07:25:02] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
@@ -157,16 +157,16 @@ WARN StatusConsoleListener Advanced terminal features are not available in this 
 		GuideME 21.1.1 (guideme)
 		Minecraft 1.21.1 (minecraft)
 		NeoForge 21.1.169 (neoforge)
-[07:20:32] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
-[07:20:32] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserverdev' with arguments [--gameDir, .]
-[07:20:33] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[07:20:40] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[07:20:40] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[07:20:40] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[07:20:40] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[07:20:40] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[07:20:40] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.169, for MC 1.21.1
-[07:20:41] [main/ERROR] [minecraft/Settings]: Failed to load properties from file: server.properties
+[07:25:03] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[07:25:03] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserverdev' with arguments [--gameDir, .]
+[07:25:04] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[07:25:09] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07:25:09] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07:25:09] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[07:25:09] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[07:25:09] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07:25:09] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.169, for MC 1.21.1
+[07:25:10] [main/ERROR] [minecraft/Settings]: Failed to load properties from file: server.properties
 java.nio.file.NoSuchFileException: server.properties
 	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?] {}
 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?] {}
@@ -198,82 +198,65 @@ java.nio.file.NoSuchFileException: server.properties
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
 	at net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?] {}
-[07:20:41] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[07:20:41] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/home/runner/work/datapacks-mods-test/datapacks-mods-test/AE2_线缆拓展/build/moddev/artifacts/neoforge-21.1.169.jar%23125!/assets/.mcassetsroot' uses unexpected schema
-[07:20:41] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/home/runner/work/datapacks-mods-test/datapacks-mods-test/AE2_线缆拓展/build/moddev/artifacts/neoforge-21.1.169.jar%23125!/data/.mcassetsroot' uses unexpected schema
-[07:20:41] [main/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: [ae2_cable_tiers]
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.SpawnExtraGridTestTools for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.QnbTestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.InscriberTestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.AnnihilationPlaneTests for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.TestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.P2PTestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.PatternProviderPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.SubnetPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.GuidebookPlot for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.CrystalResonanceGeneratorTestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.InterfaceTestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.PatternProviderLockModePlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.InvalidPatternTestPlot for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.ChannelTests for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.AutoCraftingTestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.ExternalEnergyTestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.ItemP2PTestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.MemoryCardTestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.SpatialTestPlots for plots
-[07:20:42] [Worker-Main-1/INFO] [AE2:C/]: Scanning class appeng.server.testplots.CraftingTerminalTestPlots for plots
-[07:20:43] [main/INFO] [minecraft/RecipeManager]: Loaded 2208 recipes
-[07:20:43] [main/INFO] [minecraft/AdvancementTree]: Loaded 1807 advancements
-[07:20:44] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
-[07:20:44] [worldgen/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
-[07:20:45] [Server thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 331 ms
-[07:20:45] [Server thread/INFO] [minecraft/GameTestServer]: Started game test server
-[07:20:45] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[07:20:45] [Server thread/INFO] [minecraft/GameTestServer]: 12 tests are now running at position -7982664, -59, 449443!
-[07:20:46] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'defaultBatch:0' (12 tests)...
-[07:20:46] [Server thread/INFO] [minecraft/GameTestServer]: [            ]
-[07:20:46] [Server thread/ERROR] [minecraft/LogTestReporter]: alltierconversionrecipesactuallyload failed at -7982574, -60, 449443! Correct recipe output and count
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: [_+X________ ]
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: [_+X_________]
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: [++X______+__]
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: [++X______+__]
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: [++X______+__]
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: [++X______+__]
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: [++X++++++++_]
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: [++X+++++++++]
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: ========= 12 GAME TESTS COMPLETE IN 2.369 s ======================
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: 1 required tests failed :(
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]:    - alltierconversionrecipesactuallyload
-[07:20:47] [Server thread/INFO] [minecraft/GameTestServer]: ====================================================
-[07:20:47] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
-[07:20:47] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
-[07:20:47] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
-[07:20:49] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Test Level]'/minecraft:overworld
-[07:20:49] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Test Level]'/minecraft:the_nether
-[07:20:49] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Test Level]'/minecraft:the_end
-[07:20:49] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Test Level]'/ae2:spatial_storage
-[07:20:49] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[07:20:49] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[07:20:49] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[07:20:49] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (spatial_storage): All chunks are saved
-[07:20:49] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
-[07:20:49] [Server thread/INFO] [minecraft/GameTestServer]: Game test server shutting down
-
-> Task :runGameTestServer FAILED
+[07:25:10] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:25:10] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/home/runner/work/datapacks-mods-test/datapacks-mods-test/AE2_线缆拓展/build/moddev/artifacts/neoforge-21.1.169.jar%23125!/assets/.mcassetsroot' uses unexpected schema
+[07:25:10] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/home/runner/work/datapacks-mods-test/datapacks-mods-test/AE2_线缆拓展/build/moddev/artifacts/neoforge-21.1.169.jar%23125!/data/.mcassetsroot' uses unexpected schema
+[07:25:10] [main/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: [ae2_cable_tiers]
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.SpawnExtraGridTestTools for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.QnbTestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.InscriberTestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.AnnihilationPlaneTests for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.TestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.P2PTestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.PatternProviderPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.SubnetPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.GuidebookPlot for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.CrystalResonanceGeneratorTestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.InterfaceTestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.PatternProviderLockModePlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.InvalidPatternTestPlot for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.ChannelTests for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.AutoCraftingTestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.ExternalEnergyTestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.ItemP2PTestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.MemoryCardTestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.SpatialTestPlots for plots
+[07:25:11] [Worker-Main-2/INFO] [AE2:C/]: Scanning class appeng.server.testplots.CraftingTerminalTestPlots for plots
+[07:25:11] [main/INFO] [minecraft/RecipeManager]: Loaded 2207 recipes
+[07:25:11] [main/INFO] [minecraft/AdvancementTree]: Loaded 1807 advancements
+[07:25:12] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[07:25:12] [worldgen/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[07:25:13] [Server thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 339 ms
+[07:25:13] [Server thread/INFO] [minecraft/GameTestServer]: Started game test server
+[07:25:13] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[07:25:13] [Server thread/INFO] [minecraft/GameTestServer]: 12 tests are now running at position 11659728, -59, 13989719!
+[07:25:14] [Server thread/INFO] [minecraft/GameTestRunner]: Running test batch 'defaultBatch:0' (12 tests)...
+[07:25:14] [Server thread/INFO] [minecraft/GameTestServer]: [            ]
+[07:25:15] [Server thread/INFO] [minecraft/GameTestServer]: [_++_________]
+[07:25:15] [Server thread/INFO] [minecraft/GameTestServer]: [_++______+__]
+[07:25:15] [Server thread/INFO] [minecraft/GameTestServer]: [+++______+__]
+[07:25:15] [Server thread/INFO] [minecraft/GameTestServer]: [+++______+__]
+[07:25:15] [Server thread/INFO] [minecraft/GameTestServer]: [+++______+__]
+[07:25:15] [Server thread/INFO] [minecraft/GameTestServer]: [+++______+__]
+[07:25:15] [Server thread/INFO] [minecraft/GameTestServer]: [++++++++++++]
+[07:25:15] [Server thread/INFO] [minecraft/GameTestServer]: ========= 12 GAME TESTS COMPLETE IN 2.250 s ======================
+[07:25:15] [Server thread/INFO] [minecraft/GameTestServer]: All 12 required tests passed :)
+[07:25:15] [Server thread/INFO] [minecraft/GameTestServer]: ====================================================
+[07:25:15] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[07:25:15] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[07:25:15] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[07:25:17] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Test Level]'/minecraft:overworld
+[07:25:17] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Test Level]'/minecraft:the_end
+[07:25:17] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Test Level]'/minecraft:the_nether
+[07:25:17] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[Test Level]'/ae2:spatial_storage
+[07:25:17] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[07:25:17] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[07:25:17] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[07:25:17] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (spatial_storage): All chunks are saved
+[07:25:17] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+[07:25:17] [Server thread/INFO] [minecraft/GameTestServer]: Game test server shutting down
 
 [Incubating] Problems report is available at: file:///home/runner/work/datapacks-mods-test/datapacks-mods-test/AE2_%E7%BA%BF%E7%BC%86%E6%8B%93%E5%B1%95/build/reports/problems/problems-report.html
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':runGameTestServer'.
-> Process 'command '/usr/lib/jvm/temurin-21-jdk-amd64/bin/java'' finished with non-zero exit value 1
-
-* Try:
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights.
-> Get more help at https://help.gradle.org.
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
 
@@ -281,5 +264,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.12/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 3m 47s
+BUILD SUCCESSFUL in 2m 47s
 11 actionable tasks: 11 executed
