@@ -1,5 +1,6 @@
 {
-  "source_commit": "9ed5122ee58abde40a0609de4e3d02eed1c5e693",
-  "exit_code": 1,
-  "run_url": "https://github.com/abababababaa/datapacks-mods-test/actions/runs/39417875525"
+  "source_commit": "c8509e706f43e2bce29d219d014f017e0782a8cc",
+  "exit_code": 0,
+  "run_url": "https://github.com/abababababaa/datapacks-mods-test/actions/runs/39419326196",
+  "sha256": "80914eaa58ef2d0d97515a6370f6bfb23917a18b439fd52fba5f91c2669efd52"
 }
