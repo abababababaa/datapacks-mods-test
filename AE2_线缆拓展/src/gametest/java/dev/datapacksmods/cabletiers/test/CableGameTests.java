@@ -166,7 +166,7 @@ public final class CableGameTests {
             var rawGlass = new ArrayList<ItemStack>();
             var electronics = new ArrayList<ItemStack>();
             if (tier == 1) {
-                rawGlass.add(new ItemStack(MaterialItems.MICRO_QUARTZ_FIBER));
+                rawGlass.add(new ItemStack(MaterialItems.MICRO_QUARTZ_FIBER.get()));
                 for (int i = 0; i < 4; i++) rawGlass.add(new ItemStack(MaterialItems.item("fluix_crystal_fragment")));
                 for (int i = 0; i < 2; i++) electronics.add(new ItemStack(MaterialItems.item("redstone_fragment")));
                 for (int i = 0; i < 2; i++) electronics.add(new ItemStack(MaterialItems.item("glowstone_fragment")));
