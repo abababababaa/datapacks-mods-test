@@ -2,20 +2,18 @@
 
 目标：Minecraft Java 1.21.1、NeoForge 21.1.169 或更高的 21.1.x、官方 AE2 **19.2.18**。这是 NeoForge 附属模组，不用于 Fabric。AE2 本身还需要 GuideME 21.1.1 或兼容的较新版本。
 
-**当前工作区更新：1.1.0 源码已实现，静态检查通过，尚未编译或执行本版本游戏测试，也尚未推送。目录内的 1.0.0 JAR 是旧版，不包含本次独立配方。** 详情见 [更新报告](更新报告.md)。
+已发布 **1.1.0**：[下载 ae2-cable-tiers-1.1.0.jar](https://github.com/abababababaa/datapacks-mods-test/raw/refs/heads/main/AE2_%E7%BA%BF%E7%BC%86%E6%8B%93%E5%B1%95/ae2-cable-tiers-1.1.0.jar)。新增一级、三级独立制作路线，全部旧等级换算途径保留；详细变更见 [更新报告](更新报告.md)。
 
-下面的 1.0.0 下载及 12 项通过记录属于上次发布版本；1.1.0 构建成功后应安装新版，并从 `mods` 移除旧版，避免重复安装同一模组。
-
-已构建可安装的 [ae2-cable-tiers-1.0.0.jar](ae2-cable-tiers-1.0.0.jar)，并通过 GitHub Actions 的 12 项真实 AE2 游戏测试。构建来源、运行链接与 SHA-256 见 [验证结果](verification/result.json)，详细输出见 [构建和游戏测试日志](verification/build.log)。
+构建及 **15 项真实 AE2 游戏测试全部通过**。构建来源、运行链接与 SHA-256 见 [验证结果](verification/result.json)，详细输出见 [构建及测试日志](verification/build.log)。目录内旧版1.0.0仅供回退，更新时请从实例 `mods` 移除旧版，不要同时安装两个版本。
 
 ## 安装
 
 1. 使用 Minecraft 1.21.1 的 **NeoForge** 实例，NeoForge 至少为 21.1.169。之前的 Fabric 模组需要另一个 Fabric 实例运行。
 2. 在该实例的 `mods` 中安装官方 AE2 **19.2.18** 及其依赖 **GuideME 21.1.1**（或兼容的较新版本）。
-3. 下载本目录的 `ae2-cable-tiers-1.0.0.jar`，放进同一个 `mods` 文件夹，然后重启游戏。JAR 无需解压；多人游戏的服务器和客户端均需安装。
+3. 下载本目录的 `ae2-cable-tiers-1.1.0.jar`，放进同一个 `mods` 文件夹，然后重启游戏。JAR 无需解压；多人游戏的服务器和客户端均需安装。
 4. 在创造模式的“AE2 线缆拓展”标签页中查看全部三级线缆，或通过下面的合成配方获取。
 
-[直接下载 JAR](https://github.com/abababababaa/datapacks-mods-test/raw/refs/heads/main/AE2_%E7%BA%BF%E7%BC%86%E6%8B%93%E5%B1%95/ae2-cable-tiers-1.0.0.jar)。如浏览器询问保存位置，选择保存文件。
+[直接下载 JAR](https://github.com/abababababaa/datapacks-mods-test/raw/refs/heads/main/AE2_%E7%BA%BF%E7%BC%86%E6%8B%93%E5%B1%95/ae2-cable-tiers-1.1.0.jar)。如浏览器询问保存位置，选择保存文件。
 
 ## 全覆盖范围
 
@@ -104,7 +102,7 @@ denseTier3 = 64
 .\gradlew.bat runGameTestServer
 ```
 
-Linux/macOS 使用 `./gradlew`。1.1.0 构建输出应为 `build/libs/ae2-cable-tiers-1.1.0.jar`。将构建结果放进 NeoForge 实例的 `mods`，客户端和服务器都需要安装。不要把开发源码文件夹直接放入 `mods`。
+Linux/macOS 使用 `./gradlew`。构建输出为 `build/libs/ae2-cable-tiers-1.1.0.jar`。将构建结果放进 NeoForge 实例的 `mods`，客户端和服务器都需要安装。不要把开发源码文件夹直接放入 `mods`。
 
 可重复生成资源并检查：
 
@@ -116,8 +114,13 @@ python tools/validate_materials.py
 
 1.1.0 两项静态检查已通过：255 个线缆组合、193 个物品模型、482 个配方、22 组材料可逆性、16 色羊毛及独立主路线的精确四分之一/四倍成本。
 
-`src/gametest` 现有 15 项测试，包括原有频道分配、混合路径、颜色及稀有度测试，以及新增的独立制作路线、材料还原、原有配方、所有染色/洗色配方检查。**1.1.0 尚未执行游戏测试**；旧版 1.0.0 的 12 项通过记录不能证明本次更新可运行。
+`src/gametest` 的 **15 项真实 AE2 游戏测试已执行并全部通过**：
 
-当前运行环境禁止 Gradle 所需的本地套接字，沙箱外运行与网络授权均未获得，因此不能交付经过编译验证的新版 JAR。安装配置所保存的“允许全部域名”与本次命令执行的沙箱权限是不同层面。
+- 原有12项：255个组合的部件、容量与稀有度；基本4/8/16和致密16/32/64实际频道分配；混合路径瓶颈；颜色隔离与等级保留；倍率和无限模式；全部255个等级换算配方。
+- 新增独立制作检查：两等级的全部无色制作路线、16色羊毛输入、四角升级与2×2致密合成，并保留原有AE2致密配方。
+- 新增材料检查：22组可逆换算、AE2石英粉的微纤维及原纤维配方、原二级玻璃配方、禁止混合充能/普通碎块还原。
+- 新增全染色/洗色检查：5种线缆×2个新增等级×16色，分别验证染色以及雪球、水桶洗色的输出等级。
+
+构建和游戏测试在 GitHub Actions 的 NeoForge 21.1.169 + AE2 19.2.18 环境执行。未在 Windows 图形客户端或任意其他模组组合中逐一测试。
 
 开发缓存、测试世界和构建中间文件由 `.gitignore` 排除。测试代码不进入主模组 JAR。
