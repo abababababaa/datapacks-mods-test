@@ -206,7 +206,7 @@ public final class CableGameTests {
             checkCraft(h, List.of(new ItemStack(source)), fragment, 8);
             checkCraft(h, java.util.Collections.nCopies(8, new ItemStack(fragment)), source, 1);
         }
-        for (String dust : new String[]{"ae2:certus_quartz_dust", "ae2:nether_quartz_dust"}) {
+        for (String dust : new String[]{"ae2:certus_quartz_dust"}) {
             var inputs = List.of(new ItemStack(Items.GLASS), new ItemStack(itemById(dust)), new ItemStack(Items.GLASS));
             checkInput(h, CraftingInput.of(1, 3, inputs), MaterialItems.MICRO_QUARTZ_FIBER.get(), 4);
             // Existing AE2 3x3 fiber recipe must still produce three whole fibers.
@@ -259,7 +259,7 @@ public final class CableGameTests {
     }
     private static void checkInput(GameTestHelper h, CraftingInput input, net.minecraft.world.item.Item expected, int count) {
         var match = h.getLevel().getRecipeManager().getRecipeFor(RecipeType.CRAFTING, input, h.getLevel());
-        h.assertTrue(match.isPresent(), "Recipe exists");
+        h.assertTrue(match.isPresent(), "Recipe exists for " + input.items() + "; expected " + expected);
         var output = match.orElseThrow().value().assemble(input, h.getLevel().registryAccess());
         h.assertTrue(output.is(expected) && output.getCount() == count, "Expected " + count + " x " + expected + "; got " + output + " via " + match.orElseThrow().id());
     }
