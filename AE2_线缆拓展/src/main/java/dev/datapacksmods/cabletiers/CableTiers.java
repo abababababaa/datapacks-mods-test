@@ -24,9 +24,11 @@ public final class CableTiers {
                 for (CableKind kind : CableKind.values()) for (AEColor color : AEColor.values()) for (int tier = 1; tier <= 3; tier++) {
                     output.accept(CableItems.item(kind, color, tier));
                 }
+                MaterialItems.ALL.values().forEach(holder -> output.accept(holder.get()));
             }).build());
     }
     public CableTiers(IEventBus bus, ModContainer container) {
+        MaterialItems.initialize();
         CableItems.ITEMS.register(bus);
         TABS.register(bus);
         bus.addListener(CableTiers::setTierTwoRarity);

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2:fluix_crystal"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:fluix_crystal_fragment",
+    "count": 8
+  }
+}

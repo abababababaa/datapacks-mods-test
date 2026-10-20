@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "key": {
+    "C": {
+      "item": "ae2_cable_tiers:fluix_smart_cable_tier_3"
+    }
+  },
+  "result": {
+    "id": "ae2_cable_tiers:fluix_smart_dense_cable_tier_3",
+    "count": 1
+  }
+}

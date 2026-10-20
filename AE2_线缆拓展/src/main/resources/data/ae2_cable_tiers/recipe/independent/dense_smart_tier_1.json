@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2_cable_tiers:fluix_covered_dense_cable_tier_1"
+    },
+    {
+      "item": "ae2_cable_tiers:redstone_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:redstone_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:glowstone_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:glowstone_fragment"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:fluix_smart_dense_cable_tier_1",
+    "count": 1
+  }
+}

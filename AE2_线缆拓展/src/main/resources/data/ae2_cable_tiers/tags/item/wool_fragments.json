@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "ae2_cable_tiers:white_wool_fragment",
+    "ae2_cable_tiers:orange_wool_fragment",
+    "ae2_cable_tiers:magenta_wool_fragment",
+    "ae2_cable_tiers:light_blue_wool_fragment",
+    "ae2_cable_tiers:yellow_wool_fragment",
+    "ae2_cable_tiers:lime_wool_fragment",
+    "ae2_cable_tiers:pink_wool_fragment",
+    "ae2_cable_tiers:gray_wool_fragment",
+    "ae2_cable_tiers:light_gray_wool_fragment",
+    "ae2_cable_tiers:cyan_wool_fragment",
+    "ae2_cable_tiers:purple_wool_fragment",
+    "ae2_cable_tiers:blue_wool_fragment",
+    "ae2_cable_tiers:brown_wool_fragment",
+    "ae2_cable_tiers:green_wool_fragment",
+    "ae2_cable_tiers:red_wool_fragment",
+    "ae2_cable_tiers:black_wool_fragment"
+  ]
+}

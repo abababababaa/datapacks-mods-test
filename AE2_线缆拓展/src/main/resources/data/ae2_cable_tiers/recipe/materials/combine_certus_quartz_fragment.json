@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2_cable_tiers:certus_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:certus_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:certus_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:certus_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:certus_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:certus_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:certus_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:certus_quartz_fragment"
+    }
+  ],
+  "result": {
+    "id": "ae2:certus_quartz_crystal",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:light_gray_wool"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:light_gray_wool_fragment",
+    "count": 8
+  }
+}

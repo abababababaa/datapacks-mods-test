@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2_cable_tiers:magenta_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:magenta_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:magenta_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:magenta_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:magenta_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:magenta_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:magenta_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:magenta_wool_fragment"
+    }
+  ],
+  "result": {
+    "id": "minecraft:magenta_wool",
+    "count": 1
+  }
+}

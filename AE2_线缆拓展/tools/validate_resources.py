@@ -25,6 +25,8 @@ with zipfile.ZipFile(sys.argv[1]) as ae2:
     own_inputs = {}
     for path in (RES / "data/ae2_cable_tiers/recipe").rglob("*.json"):
         key = shapeless_key(json.loads(path.read_text()))
+        if key is None:
+            continue
         assert key not in official_inputs, f"Conflicts with AE2: {path} / {official_inputs.get(key)}"
         assert key not in own_inputs, f"Ambiguous addon recipes: {path} / {own_inputs.get(key)}"
         own_inputs[key] = path
@@ -45,7 +47,12 @@ with zipfile.ZipFile(sys.argv[1]) as ae2:
                 ("split", normal, 1, low, 4), ("combine", low, 4, normal, 1), ("upgrade", normal, 8, high, 2)
             ]:
                 r = json.loads((recipes / category / f"{base}.json").read_text())
-                assert r["ingredients"] == [{"item": ingredient}] * count
+                if category == "combine":
+                    assert r["type"] == "minecraft:crafting_shaped"
+                    assert r["pattern"] == ["C C", "   ", "C C"]
+                    assert r["key"] == {"C": {"item": ingredient}}
+                else:
+                    assert r["ingredients"] == [{"item": ingredient}] * count
                 assert r["result"] == {"id": output, "count": quantity}
             for tier in [1, 3]:
                 if color != "fluix":
@@ -54,7 +61,7 @@ with zipfile.ZipFile(sys.argv[1]) as ae2:
                     assert r["result"]["id"] == f"ae2_cable_tiers:{base}_tier_{tier}"
     for p in RES.rglob("*.json"):
         json.loads(p.read_text())
-    assert len(list((RES / "assets/ae2_cable_tiers/models/item").glob("*.json"))) == 170
-    assert len(list((RES / "data/ae2_cable_tiers/recipe").rglob("*.json"))) == 425
+    assert len(list((RES / "assets/ae2_cable_tiers/models/item").glob("*.json"))) == 193
+    assert len(list((RES / "data/ae2_cable_tiers/recipe").rglob("*.json"))) == 482
     assert not (RES / "data/ae2/recipe").exists(), "Do not overwrite AE2 recipes"
-print("Passed: 255 combinations; 170 model references; 425 recipes; exact tier conversion costs; valid JSON; no overwritten AE2 recipes.")
+print("Passed: 255 combinations; 193 model references; 482 recipes; exact tier conversion costs; valid JSON; no overwritten AE2 recipes.")

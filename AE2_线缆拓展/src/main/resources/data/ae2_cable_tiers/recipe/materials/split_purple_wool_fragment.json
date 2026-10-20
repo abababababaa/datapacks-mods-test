@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:purple_wool"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:purple_wool_fragment",
+    "count": 8
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2_cable_tiers:fluix_glass_cable_tier_1"
+    },
+    {
+      "tag": "ae2_cable_tiers:wool_fragments"
+    },
+    {
+      "tag": "ae2_cable_tiers:wool_fragments"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:fluix_covered_cable_tier_1",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2:charged_certus_quartz_crystal"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:charged_certus_quartz_fragment",
+    "count": 8
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2_cable_tiers:fluix_crystal_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:fluix_crystal_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:fluix_crystal_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:fluix_crystal_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:fluix_crystal_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:fluix_crystal_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:fluix_crystal_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:fluix_crystal_fragment"
+    }
+  ],
+  "result": {
+    "id": "ae2:fluix_crystal",
+    "count": 1
+  }
+}

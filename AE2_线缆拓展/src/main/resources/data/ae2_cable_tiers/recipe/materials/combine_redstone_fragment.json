@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2_cable_tiers:redstone_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:redstone_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:redstone_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:redstone_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:redstone_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:redstone_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:redstone_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:redstone_fragment"
+    }
+  ],
+  "result": {
+    "id": "minecraft:redstone",
+    "count": 1
+  }
+}

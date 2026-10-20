@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2_cable_tiers:light_gray_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:light_gray_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:light_gray_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:light_gray_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:light_gray_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:light_gray_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:light_gray_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:light_gray_wool_fragment"
+    }
+  ],
+  "result": {
+    "id": "minecraft:light_gray_wool",
+    "count": 1
+  }
+}

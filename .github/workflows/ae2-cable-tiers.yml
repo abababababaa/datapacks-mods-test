@@ -27,6 +27,15 @@ jobs:
           set +e
           ./gradlew --no-daemon build runGameTestServer --console=plain > verification/build.log 2>&1
           build_status=$?
+          if [ "$build_status" -eq 0 ]; then
+            python3 - <<'PYTEST'
+          from pathlib import Path
+          log = Path('verification/build.log').read_text()
+          assert '15 GAME TESTS COMPLETE' in log, 'Expected 15 executed game tests'
+          assert 'All 15 required tests passed' in log, 'Expected all 15 tests to pass'
+          PYTEST
+            build_status=$?
+          fi
           echo "exit_code=$build_status" >> "$GITHUB_OUTPUT"
           tail -100 verification/build.log
           exit 0
@@ -43,7 +52,7 @@ jobs:
           root = Path('AE2_线缆拓展')
           result = {'source_commit': os.environ['SOURCE_COMMIT'], 'exit_code': int(os.environ['BUILD_EXIT']), 'run_url': os.environ['RUN_URL']}
           if result['exit_code'] == 0:
-              binary = root / 'build/libs/ae2-cable-tiers-1.0.0.jar'
+              binary = root / 'build/libs/ae2-cable-tiers-1.1.0.jar'
               target = root / binary.name
               shutil.copyfile(binary, target)
               digest = hashlib.sha256(target.read_bytes()).hexdigest()
@@ -55,7 +64,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add AE2_线缆拓展/verification
           if [ "${BUILD_EXIT}" = '0' ]; then
-            git add AE2_线缆拓展/ae2-cable-tiers-1.0.0.jar AE2_线缆拓展/ae2-cable-tiers-1.0.0.jar.sha256
+            git add AE2_线缆拓展/ae2-cable-tiers-1.1.0.jar AE2_线缆拓展/ae2-cable-tiers-1.1.0.jar.sha256
           fi
           git diff --cached --quiet || git commit -m 'Record AE2 build and game-test result [skip ci]'
           git push origin HEAD:${{ github.ref_name }}

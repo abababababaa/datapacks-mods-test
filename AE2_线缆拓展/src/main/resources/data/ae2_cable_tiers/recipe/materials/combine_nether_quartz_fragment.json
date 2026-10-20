@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2_cable_tiers:nether_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:nether_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:nether_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:nether_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:nether_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:nether_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:nether_quartz_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:nether_quartz_fragment"
+    }
+  ],
+  "result": {
+    "id": "minecraft:quartz",
+    "count": 1
+  }
+}

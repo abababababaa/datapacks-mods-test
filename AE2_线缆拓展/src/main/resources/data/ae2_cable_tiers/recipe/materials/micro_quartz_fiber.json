@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "G",
+    "Q",
+    "G"
+  ],
+  "key": {
+    "G": {
+      "tag": "c:glass_blocks/cheap"
+    },
+    "Q": {
+      "tag": "ae2:all_quartz_dust"
+    }
+  },
+  "result": {
+    "id": "ae2_cable_tiers:micro_quartz_fiber",
+    "count": 4
+  }
+}

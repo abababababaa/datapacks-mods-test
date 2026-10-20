@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "key": {
+    "C": {
+      "item": "ae2_cable_tiers:fluix_covered_cable_tier_1"
+    }
+  },
+  "result": {
+    "id": "ae2_cable_tiers:fluix_covered_dense_cable_tier_1",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2:quartz_fiber"
+    },
+    {
+      "item": "ae2:quartz_fiber"
+    },
+    {
+      "item": "ae2:quartz_fiber"
+    },
+    {
+      "item": "ae2:quartz_fiber"
+    },
+    {
+      "item": "ae2:fluix_block"
+    },
+    {
+      "item": "ae2:fluix_block"
+    }
+  ],
+  "result": {
+    "id": "ae2_cable_tiers:fluix_glass_cable_tier_3",
+    "count": 4
+  }
+}

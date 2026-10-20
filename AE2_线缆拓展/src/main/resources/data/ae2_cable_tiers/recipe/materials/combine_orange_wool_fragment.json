@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ae2_cable_tiers:orange_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:orange_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:orange_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:orange_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:orange_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:orange_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:orange_wool_fragment"
+    },
+    {
+      "item": "ae2_cable_tiers:orange_wool_fragment"
+    }
+  ],
+  "result": {
+    "id": "minecraft:orange_wool",
+    "count": 1
+  }
+}
